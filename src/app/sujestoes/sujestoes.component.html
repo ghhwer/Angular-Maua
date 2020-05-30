@@ -1,0 +1,61 @@
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-maua-breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+          <li class="breadcrumb-item active">Sugestões</li>
+        </ol>
+      </nav>
+    <div class="row mt-5">
+        <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark">
+                <img class="card-img" src="assets/sugestao.jpg" style="opacity: 45%;" alt="">
+                <div class="card-img-overlay text-light">                            
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Enviar uma sugestão</h5>
+                    <form action="javascript:void(0);">
+                        <div class="form-group">
+                            <label for="sugestoes">Nome</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="sugestoes">Email para contato</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="">
+                            <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu email com
+                                terceiros</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="sugestoes">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="sugestoes">Sugestão</label>
+                            <textarea type="texto" class="form-control" id="sugestao_text" placeholder=""
+                                style="min-height: 7em;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Selecione uma opção:</label>
+                            <select class="form-control">
+                                <option value="1">Não sou aluno do Instituto Mauá de Tecnologia</option>
+                                <option value="2">Sou aluno do Instituto Mauá de Tecnologia</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                            <label class="form-check-label" for="exampleCheck1">Eu desejo receber emails promocionais e notícias
+                                do Instituto Mauá de Tecnologia</label>
+                        </div>
+                        
+                        <button class="btn btn-primary mt-3" type="click" onclick="Swal.fire({position: 'top-end', icon: 'success',title: 'Email Enviado!',showConfirmButton: false,timer: 1500})">Enviar</button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form>

@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1200px) {
+    .adapt-maua{
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .login-dropdown-menu{
+        width: 100%;
+        margin: 2%;
+    }
+    .adapt-maua{
+        font-size: small;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .login-dropdown-menu{
+        width: 250%;
+        margin: 2%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.list-maua-footer,
+a{
+    color: azure;
+}
+.strike-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    margin: 0.5%;
+}
+
+.bg-maua{
+    background:#3262a8;
+    color: cornsilk;
+}

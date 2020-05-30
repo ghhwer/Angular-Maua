@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@media only screen and (max-width: 720px) {
+    .content {
+        margin-top: 11em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .content {
+        margin-top: 10em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+a{
+    color: azure;
+}
