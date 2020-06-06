@@ -13,10 +13,6 @@ export class ProfessoresComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $("#prof-click-item").removeClass('active');
-    $("#suje-click-item").removeClass('active');
-    $("#home-click-item").removeClass('active');
-    $("#prof-click-item").addClass('active');
     $.ajax({
       type: "GET",
       url: 'assets/professores.json',

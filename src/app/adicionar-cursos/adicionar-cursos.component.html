@@ -1,0 +1,10 @@
+<div class="row mt-4">
+    <div class="col-md-4 col-sm-12">
+        <h3 class="strike-title">Adicionar Novo Curso</h3>
+    </div>
+    <div class="col-md-8 col-sm-12">
+        <div class="strike-maua p-2 m-2"></div>
+    </div>
+</div>
+<app-cursos-list [cursos]="cursos"></app-cursos-list>
+<app-cursos-form (saveCurso)="saveCurso($event)"></app-cursos-form>

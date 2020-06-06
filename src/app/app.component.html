@@ -3,9 +3,10 @@
   <div class="container">
     <a href="home" class="navbar-brand"><img src="assets/logo_maua.png"></a>
     <ul class="navbar-nav">
-      <li id="home-click-item" class="nav-item active"><a class="nav-link" routerLink="/">Home</a></li>
-      <li id="prof-click-item" class="nav-item"><a class="nav-link" routerLink="/professores">Professores</a></li>
-      <li id="suje-click-item" class="nav-item"><a class="nav-link" routerLink="/sujestoes">Sugestões</a></li>
+      <li class="nav-item"><a id="home-click-item" appLinkDirective class="nav-link" routerLink="/">Home</a></li>
+      <li class="nav-item"><a id="prof-click-item" appLinkDirective class="nav-link" routerLink="/professores">Professores</a></li>
+      <li class="nav-item"><a id="suje-click-item" appLinkDirective class="nav-link" routerLink="/sujestoes">Sugestões</a></li>
+      <li class="nav-item"><a id="adcc-click-item" appLinkDirective class="nav-link" routerLink="/adicionacurso">Adicionar Curso</a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -15,7 +16,6 @@
           <div class="p-3">
             <span>Login do usuário</span>
           </div>
-
           <div class="dropdown-divider"></div>
           <div class="input-group p-3">
             <input type="text" class="form-control" placeholder="Usuário" aria-label="Recipient's username">
@@ -43,6 +43,7 @@
 <div class="content">
   <router-outlet></router-outlet>
 </div>
+
 
 
 <!--Footer-->
