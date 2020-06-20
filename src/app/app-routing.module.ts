@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { ProfessoresComponent } from './professores/professores.component';
 import { SujestoesComponent } from './sujestoes/sujestoes.component';
 import { AdicionarCursosComponent } from './adicionar-cursos/adicionar-cursos.component'
+import { AlunosComponent } from './alunos/alunos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'professores', component: ProfessoresComponent },
   { path: 'sujestoes', component: SujestoesComponent }, 
   { path: 'adicionacurso', component: AdicionarCursosComponent},
+  { path: 'alunos', component: AlunosComponent},
   { path: '**', redirectTo: 'home'}
 ];
 

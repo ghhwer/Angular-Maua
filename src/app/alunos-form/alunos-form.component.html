@@ -1,0 +1,26 @@
+<form #alunoForm="ngForm" (ngSubmit)="adicionarAluno(alunoForm)">
+    <div class="form-group col-12">
+        <label for="nomeAluno">Nome do Aluno</label>
+        <input type="text" placeholder="Nome" class="form-control p-4" name="nome" ngModel>
+    </div>
+    <div class="form-group col-12">
+        <label for="idadeAluno">Idade do Aluno</label>
+        <input type="number" min="16" max="100" class="form-control p-4" name="idade" ngModel>
+    </div>
+    <div class="form-group col-12">
+        <label for="emailAluno">Email</label>
+        <input type="text" placeholder="exemplo@exemplo.com" class="form-control p-4" name="email" ngModel>
+    </div>
+    <div class="form-group col-12">
+        <label for="cursoAluno">Curso</label>
+        <select name="" id="cursoAluno" class="form-control" name="curso" ngModel>
+            <option value="" disabled selected>Selecione</option>
+            <option *ngFor="let curso of cursos">{{ curso }}</option>
+        </select>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary btn-block">Adicionar Aluno</button>
+        </div>
+    </div>
+</form>

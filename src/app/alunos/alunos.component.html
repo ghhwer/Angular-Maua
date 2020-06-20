@@ -1,0 +1,30 @@
+<div class="['container-fluid']">
+
+    <div [ngClass]="['row', 'mt-4']">
+        <div [ngClass]="['col-md-4', 'col-sm-12']">
+            <h3 [ngClass]="['strike-title']">Gerenciamento dos Alunos</h3>
+        </div>
+        <div [ngClass]="['col-md-8', 'col-sm-12']">
+            <div [ngClass]="['strike-maua', 'p-2', 'm-2']"></div>
+        </div>
+    </div>
+    <div [ngClass]="['row']">
+        <div [ngClass]="['col-xs-12', 'col-sm-12', 'col-md-12', 'col-lg-12', 'col-xl-6']">
+            <div [ngClass]="['card']">
+                <div [ngClass]="['card-body']">
+                    <h5 [ngClass]="['card-title']">Cadastrar Novo Aluno</h5>
+                    <app-alunos-form [ngClass]="['pt-2']" (saveAluno)="saveAluno($event)"></app-alunos-form>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="['col-xs-12', 'col-sm-12', 'col-md-12', 'col-lg-12', 'col-xl-6']">
+            <div [ngClass]="['card']">
+                <div [ngClass]="['card-body']">
+                    <h5 [ngClass]="['card-title']">Alunos Cadastrados</h5>
+                    <app-alunos-list [alunos]="alunos" ></app-alunos-list>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

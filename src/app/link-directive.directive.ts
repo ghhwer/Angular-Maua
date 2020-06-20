@@ -12,7 +12,8 @@ export class LinkDirectiveDirective {
     $("#prof-click-item").removeClass('active');
     $("#suje-click-item").removeClass('active');
     $("#home-click-item").removeClass('active');
-    $("#adcc-click-item").removeClass('active');
+    $("#gercur-click-item").removeClass('active');
+    $("#geralu-click-item").removeClass('active');
   }
   @HostListener('click', ['$event']) onClick(event) {
     this.deactivateAll()
